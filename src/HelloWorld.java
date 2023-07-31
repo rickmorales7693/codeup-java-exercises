@@ -1,15 +1,15 @@
 public class HelloWorld {
 
     public static void main(String[] args) {
-//        System.out.println("Hello, World!");
-//        System.out.print("Hello, World!\n");
-//        System.out.print("Hello, World!\n");
-//        System.out.print("Hello, World!\n");
-//        System.out.print("Hello, World!\n");
-//        System.out.println("Java is \"fun\"");
-//        System.out.println("/\\");
-//        String str = "hello";
-//        System.out.printf("I will say something here: %s", str);
+        System.out.println("Hello, World!");
+        System.out.print("Hello, World!\n");
+        System.out.print("Hello, World!\n");
+        System.out.print("Hello, World!\n");
+        System.out.print("Hello, World!\n");
+        System.out.println("Java is \"fun\"");
+        System.out.println("/\\");
+        String str = "hello";
+        System.out.printf("I will say something here: %s", str);
 
 
         //Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
