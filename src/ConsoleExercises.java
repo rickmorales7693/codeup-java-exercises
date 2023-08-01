@@ -5,16 +5,16 @@ public class ConsoleExercises {
 
 
 //        double pi = 3.14159;
-//        System.out.println("The value of pi is approximately " + pi);
-//        System.out.format("The value of pi is approximately %.2f", pi);
+//        System.out.println("The value of pi is approximately 3.14.");
+//        System.out.format("The value of pi is approximately %.2f\n", pi);
 
 
-//        System.out.print("\nEnter an integer: ");
+//        System.out.println("Enter an integer: ");
 //        int userInt = sc.nextInt();
 //        System.out.println("You entered: " + userInt);
 
 
-//        System.out.print("\nEnter 3 words: ");
+//        System.out.println("\nEnter 3 words: ");
 //        String firstWord = sc.next();
 //        String secondWord = sc.next();
 //        String thirdWord = sc.next();
@@ -24,7 +24,7 @@ public class ConsoleExercises {
 
 
 //        System.out.println("\nEnter a sentence: ");
-//        String userSentence1 = sc.next();
+//        String userSentence1 = sc.next(); // Only captures until the first whitespace by default
 //        System.out.println(userSentence1);
 
 //        System.out.println("\nEnter a sentence: ");
@@ -34,12 +34,11 @@ public class ConsoleExercises {
 
 
         System.out.println("\nEnter the length of the classroom: ");
-        double length = sc.nextDouble();
+        double length = Double.parseDouble(sc.nextLine());
         System.out.println("\nEnter the width of the classroom: ");
-        double width = sc.nextDouble();
+        double width = Double.parseDouble(sc.nextLine());
         System.out.println("\nEnter the height of the classroom: ");
-        double height = sc.nextDouble();
-
+        double height = Double.parseDouble(sc.nextLine());
         double area = length * width;
         System.out.println("The area of the classroom is: " + area);
         double perimeter = (length * 2) + (width * 2);
