@@ -102,42 +102,77 @@ public class ControlFlowExercises {
 
 
         // 4. Convert number grades into letter grades and edit the grade ranges to include pluses and minuses
-        while(true){
-            System.out.print("\nEnter a number grade from 0 to 100: ");
-            int numberGrade = sc.nextInt();
-            if (numberGrade >= 98) {
-                System.out.println("A+");
-            } else if (numberGrade >= 93) {
-                System.out.println("A");
-            } else if (numberGrade >= 90) {
-                System.out.println("A-");
-            } else if (numberGrade >= 88) {
-                System.out.println("B+");
-            } else if (numberGrade >= 83) {
-                System.out.println("B");
-            } else if (numberGrade >= 80) {
-                System.out.println("B-");
-            } else if (numberGrade >= 78) {
-                System.out.println("C+");
-            } else if (numberGrade >= 73) {
-                System.out.println("C");
-            } else if (numberGrade >= 70) {
-                System.out.println("C-");
-            } else if (numberGrade >= 68) {
-                System.out.println("D+");
-            } else if (numberGrade >= 63) {
-                System.out.println("D");
-            } else if (numberGrade >= 60) {
-                System.out.println("D-");
-            } else {
-                System.out.println("F");
-            }
-            System.out.print("\nDo you want to continue? [y/n]: ");
-            String userContinue = sc.next();
-            if (!userContinue.equalsIgnoreCase("y")) {
-                break;
-            }
-        }
+//        while(true){
+//            System.out.print("\nEnter a number grade from 0 to 100: ");
+//            int numberGrade = sc.nextInt();
+//            if (numberGrade >= 98) {
+//                System.out.println("A+");
+//            } else if (numberGrade >= 93) {
+//                System.out.println("A");
+//            } else if (numberGrade >= 90) {
+//                System.out.println("A-");
+//            } else if (numberGrade >= 88) {
+//                System.out.println("B+");
+//            } else if (numberGrade >= 83) {
+//                System.out.println("B");
+//            } else if (numberGrade >= 80) {
+//                System.out.println("B-");
+//            } else if (numberGrade >= 78) {
+//                System.out.println("C+");
+//            } else if (numberGrade >= 73) {
+//                System.out.println("C");
+//            } else if (numberGrade >= 70) {
+//                System.owhile(true){
+////            System.out.print("\nEnter a number grade from 0 to 100: ");
+////            int numberGrade = sc.nextInt();
+////            if (numberGrade >= 98) {
+////                System.out.println("A+");
+////            } else if (numberGrade >= 93) {
+////                System.out.println("A");
+////            } else if (numberGrade >= 90) {
+////                System.out.println("A-");
+////            } else if (numberGrade >= 88) {
+////                System.out.println("B+");
+////            } else if (numberGrade >= 83) {
+////                System.out.println("B");
+////            } else if (numberGrade >= 80) {
+////                System.out.println("B-");
+////            } else if (numberGrade >= 78) {
+////                System.out.println("C+");
+////            } else if (numberGrade >= 73) {
+////                System.out.println("C");
+////            } else if (numberGrade >= 70) {
+////                System.out.println("C-");
+////            } else if (numberGrade >= 68) {
+////                System.out.println("D+");
+////            } else if (numberGrade >= 63) {
+////                System.out.println("D");
+////            } else if (numberGrade >= 60) {
+////                System.out.println("D-");
+////            } else {
+////                System.out.println("F");
+////            }
+////            System.out.print("\nDo you want to continue? [y/n]: ");
+////            String userContinue = sc.next();
+////            if (!userContinue.equalsIgnoreCase("y")) {
+////                break;
+////            }
+////        }ut.println("C-");
+//            } else if (numberGrade >= 68) {
+//                System.out.println("D+");
+//            } else if (numberGrade >= 63) {
+//                System.out.println("D");
+//            } else if (numberGrade >= 60) {
+//                System.out.println("D-");
+//            } else {
+//                System.out.println("F");
+//            }
+//            System.out.print("\nDo you want to continue? [y/n]: ");
+//            String userContinue = sc.next();
+//            if (!userContinue.equalsIgnoreCase("y")) {
+//                break;
+//            }
+//        }
 
 
 
