@@ -8,13 +8,17 @@ public class ExtraJavaExercises {
 
 
         // 1. Write a program in Java to read 10 numbers from keyboard and find their sum and average.
-            int userInput;
-            int sum = 0;
-       for (int i = 0; i <= 10; i++) {
-                System.out.println("Enter a number: ");
-                userInput = sc.nextInt();
-                sum += userInput;
-            }
+        int totalNumbers = 10;
+        int sum = 0;
+        System.out.println("Enter " + totalNumbers + " numbers ");
+        for (int i = 0; i < totalNumbers; i++) {
+            System.out.println("Enter number " + (i + 1) + " and press enter:");
+            int number = sc.nextInt();
+            sum += number;
+        }
+        double average = (double) sum / totalNumbers;
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
 
 
 
