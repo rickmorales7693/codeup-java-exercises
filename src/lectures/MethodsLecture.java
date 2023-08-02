@@ -27,6 +27,10 @@ public class MethodsLecture {
 //    public static void sayGreeting() {
 //        System.out.println("Hello");
 //    }
+//
+//    public static void main(String[] args) {
+//        sayGreeting();
+//    }
 
     // no returned output with input
 
@@ -80,7 +84,7 @@ public class MethodsLecture {
     /**
      * METHOD MINI-EXERCISES
      */
-
+    // TODO: Create a new class called MethodPractice and add main method to test these methods...
     // TODO: Write a method, returnName, that returns the string of your name.
     // TODO: Write a method, returnLongerString, that takes in two strings and returns the longer of the two strings.
     // TODO: Write a method, canBeHalved, that takes in an integer and returns true if the input integer is evenly divisible by two.
