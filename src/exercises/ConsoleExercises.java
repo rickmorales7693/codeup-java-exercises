@@ -35,18 +35,18 @@ public class ConsoleExercises {
 
 
 
-        System.out.println("\nEnter the length of the classroom: ");
-        double length = Double.parseDouble(sc.nextLine());
-        System.out.println("\nEnter the width of the classroom: ");
-        double width = Double.parseDouble(sc.nextLine());
-        System.out.println("\nEnter the height of the classroom: ");
-        double height = Double.parseDouble(sc.nextLine());
-        double area = length * width;
-        System.out.println("The area of the classroom is: " + area);
-        double perimeter = (length * 2) + (width * 2);
-        System.out.println("The perimeter of the classroom is: " + perimeter);
-        double volume = length * width * height;
-        System.out.println("The volume of the classroom is: " + volume);
+//        System.out.println("\nEnter the length of the classroom: ");
+//        double length = Double.parseDouble(sc.nextLine());
+//        System.out.println("\nEnter the width of the classroom: ");
+//        double width = Double.parseDouble(sc.nextLine());
+//        System.out.println("\nEnter the height of the classroom: ");
+//        double height = Double.parseDouble(sc.nextLine());
+//        double area = length * width;
+//        System.out.println("The area of the classroom is: " + area);
+//        double perimeter = (length * 2) + (width * 2);
+//        System.out.println("The perimeter of the classroom is: " + perimeter);
+//        double volume = length * width * height;
+//        System.out.println("The volume of the classroom is: " + volume);
 
 
 
