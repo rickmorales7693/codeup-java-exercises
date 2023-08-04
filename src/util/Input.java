@@ -10,9 +10,9 @@ public class Input {
         scanner = new Scanner(System.in);
     }
 
-//    public String getString(){
-//
-//    }
+    public String getString(){
+        return scanner.nextLine();
+    }
 
     public boolean yesNo(){
         if (scanner.nextLine().equalsIgnoreCase("y") || scanner.nextLine().equalsIgnoreCase("yes")){
@@ -22,21 +22,35 @@ public class Input {
         }
     }
 
-//    public int getInt(int min, int max){
-//
-//    }
+    public int getInt(int min, int max){
+        System.out.println("Enter a number between " + min + " and " + max);
+        int userInput = scanner.nextInt();
+        if (userInput >= min && userInput <= max){
+            return userInput;
+        } else {
+            System.out.println("Invalid input, try again");
+            return getInt(min, max);
+        }
+    }
 
-//    public int getInt(){
-//
-//    }
+    public int getInt(){
+        return scanner.nextInt();
+    }
 
-//    public double getDouble(double min, double max){
-//
-//    }
+    public double getDouble(double min, double max){
+        System.out.println("Enter a number between " + min + " and " + max);
+        double userInput = scanner.nextDouble();
+        if (userInput >= min && userInput <= max){
+            return userInput;
+        } else {
+            System.out.println("Invalid input, try again");
+            return getDouble(min, max);
+        }
+    }
 
-//    public double getDouble(){
-//
-//    }
+    public double getDouble(){
+        return scanner.nextDouble();
+    }
 
 
 }
