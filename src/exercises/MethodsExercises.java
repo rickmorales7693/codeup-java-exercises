@@ -28,6 +28,8 @@ public class MethodsExercises {
 //        return num1 / num2;
 //    }
 
+
+    ////// GET INTEGER //////
 //    public static int getInteger(int min, int max) {
 //        Scanner sc = new Scanner(System.in);
 //        int userInput = 0;
@@ -48,6 +50,7 @@ public class MethodsExercises {
 //    }
 
 
+    ////// FACTORIAL //////
 //    public static long getFactorial() {
 //        Scanner sc = new Scanner(System.in);
 //        long userInput = 0;
@@ -71,6 +74,8 @@ public class MethodsExercises {
 //        }
 //    }
 
+
+    ////// DICE ROLLLING GAME //////
 //    public static int diceRolling() {
 //        Scanner sc = new Scanner(System.in);
 //        int userInput = 0;
@@ -95,7 +100,7 @@ public class MethodsExercises {
 //            }
 //            System.out.print("\nDo you want to continue? [y/n]: ");
 //            String userContinue = sc.next();
-//            System.out.print("\nPlease enter a number between 1 and 10: ");
+//            System.out.print("Please enter a number between 1 and 10: ");
 //            sc.nextLine();
 //            if (!userContinue.equalsIgnoreCase("y")) {
 //                break;
