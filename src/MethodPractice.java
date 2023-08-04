@@ -1,5 +1,3 @@
-package lectures;
-
 public class MethodPractice {
     public static void main(String[] args) {
         System.out.println(returnName());
