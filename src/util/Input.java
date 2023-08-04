@@ -10,29 +10,33 @@ public class Input {
         scanner = new Scanner(System.in);
     }
 
-    public String getString(){
-
-    }
+//    public String getString(){
+//
+//    }
 
     public boolean yesNo(){
-
+        if (scanner.nextLine().equalsIgnoreCase("y") || scanner.nextLine().equalsIgnoreCase("yes")){
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public int getInt(int min, int max){
+//    public int getInt(int min, int max){
+//
+//    }
 
-    }
+//    public int getInt(){
+//
+//    }
 
-    public int getInt(){
+//    public double getDouble(double min, double max){
+//
+//    }
 
-    }
-
-    public double getDouble(double min, double max){
-
-    }
-
-    public double getDouble(){
-
-    }
+//    public double getDouble(){
+//
+//    }
 
 
 }
