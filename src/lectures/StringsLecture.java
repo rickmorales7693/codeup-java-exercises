@@ -1,4 +1,4 @@
-package exercises;
+package lectures;
 
 public class StringsLecture {
 
