@@ -24,6 +24,10 @@ public class Input {
     public boolean yesNo(){
         return this.getString().trim().toLowerCase().startsWith("y");
     }
+    public boolean yesNo(String prompt){
+        System.out.println(prompt);
+        return this.yesNo();
+    }
 
 
     public int getInt(){
@@ -33,6 +37,10 @@ public class Input {
             System.out.println("You must enter a whole number");
             return this.getInt();
         }
+    }
+    public int getInt(String prompt){
+        System.out.println(prompt);
+        return this.getInt();
     }
 
     public int getInt(int min, int max){
@@ -44,6 +52,10 @@ public class Input {
             return getInt(min, max);
         }
     }
+    public int getInt(String prompt, int min, int max){
+        System.out.println(prompt);
+        return this.getInt(min, max);
+    }
 
     public double getDouble(){
         try {
@@ -52,6 +64,10 @@ public class Input {
             System.out.println("You must enter a whole number");
             return this.getDouble();
         }
+    }
+    public double getDouble(String prompt){
+        System.out.println(prompt);
+        return this.getDouble();
     }
 
     public double getDouble(double min, double max){
@@ -62,6 +78,10 @@ public class Input {
             System.out.printf("The number must be between %d and %d. Please try again.%n", min, max);
             return getDouble(min, max);
         }
+    }
+    public double getDouble(String prompt, double min, double max){
+        System.out.println(prompt);
+        return this.getDouble(min, max);
     }
 
 
