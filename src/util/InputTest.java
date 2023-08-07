@@ -23,6 +23,8 @@ public class InputTest {
 //        System.out.println("Enter a number between 1.0 and 10.0: ");
 //        System.out.println(input.getDouble(1.0, 10.0));
 
+//        System.out.println(input.getString("Please enter your name"));
+
 
     }
 

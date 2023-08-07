@@ -15,6 +15,10 @@ public class Input {
     public String getString(){
         return this.scanner.nextLine();
     }
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return this.getString();
+    }
 
     /// Returns true if user enter "yes", "Y", "yassss" or false if user enters something that isn't interpreted as "yes"
     public boolean yesNo(){
