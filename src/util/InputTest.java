@@ -8,17 +8,20 @@ public class InputTest {
 
 
 
-        System.out.println("Enter a string: ");
-        System.out.println(input.getString());
+//        System.out.println("Enter a string: ");
+//        System.out.println(input.getString());
 
-//        System.out.println("Enter 'y' for yes or 'n' for no: ");
-//        System.out.println("You entered: " + input.yesNo());
-//
-//        System.out.println("Enter an integer: ");
-//        System.out.println("You entered: " + input.getInt());
-//
-//        System.out.println("Enter a double: ");
-//        System.out.println("You entered: " + input.getDouble());
+//        System.out.println("Do you want to continue? Y/N: ");
+//        System.out.println(input.yesNo());
+
+//        System.out.println("Enter a number: ");
+//        System.out.println(input.getInt());
+
+//        System.out.println("Enter a number between 1 and 10: ");
+//        System.out.println(input.getInt(1, 10));
+
+//        System.out.println("Enter a number between 1.0 and 10.0: ");
+//        System.out.println(input.getDouble(1.0, 10.0));
 
 
     }

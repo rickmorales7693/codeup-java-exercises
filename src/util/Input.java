@@ -18,42 +18,48 @@ public class Input {
 
     /// Returns true if user enter "yes", "Y", "yassss" or false if user enters something that isn't interpreted as "yes"
     public boolean yesNo(){
-        if (this.scanner.nextLine().equalsIgnoreCase("y") || this.scanner.nextLine().equalsIgnoreCase("yes")){
-            return true;
-        } else {
-            return false;
+        return this.getString().trim().toLowerCase().startsWith("y");
+    }
+
+
+    public int getInt(){
+        try {
+            return Integer.parseInt(this.getString());
+        } catch (NumberFormatException e){
+            System.out.println("You must enter a whole number");
+            return this.getInt();
         }
     }
 
     public int getInt(int min, int max){
-        System.out.println("Enter a number between " + min + " and " + max);
-        int userInput = scanner.nextInt();
-        if (userInput >= min && userInput <= max){
-            return userInput;
-        } else {
-            System.out.println("Invalid input, try again");
+        int userInt = this.getInt();
+        if(userInt >= min && userInt <= max){
+            return userInt;
+        }else{
+            System.out.printf("The number must be between %d and %d. Please try again.%n", min, max);
             return getInt(min, max);
         }
     }
 
-    public int getInt(){
-        return scanner.nextInt();
+    public double getDouble(){
+        try {
+            return Double.parseDouble(this.getString());
+        } catch (NumberFormatException e){
+            System.out.println("You must enter a whole number");
+            return this.getDouble();
+        }
     }
 
     public double getDouble(double min, double max){
-        System.out.println("Enter a number between " + min + " and " + max);
-        double userInput = scanner.nextDouble();
-        if (userInput >= min && userInput <= max){
-            return userInput;
-        } else {
-            System.out.println("Invalid input, try again");
+        double userDouble = this.getDouble();
+        if(userDouble >= min && userDouble <= max){
+            return userDouble;
+        }else{
+            System.out.printf("The number must be between %d and %d. Please try again.%n", min, max);
             return getDouble(min, max);
         }
     }
 
-    public double getDouble(){
-        return scanner.nextDouble();
-    }
 
 
 }
