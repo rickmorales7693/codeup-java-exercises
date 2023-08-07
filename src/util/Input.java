@@ -3,19 +3,22 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-
+    /// Instance Field/Property/Variable
     private Scanner scanner;
 
+    /// Constructors
     public Input() {
-        scanner = new Scanner(System.in);
+        this.scanner = new Scanner(System.in);
     }
 
+    /// Instance Methods
     public String getString(){
-        return scanner.nextLine();
+        return this.scanner.nextLine();
     }
 
+    /// Returns true if user enter "yes", "Y", "yassss" or false if user enters something that isn't interpreted as "yes"
     public boolean yesNo(){
-        if (scanner.nextLine().equalsIgnoreCase("y") || scanner.nextLine().equalsIgnoreCase("yes")){
+        if (this.scanner.nextLine().equalsIgnoreCase("y") || this.scanner.nextLine().equalsIgnoreCase("yes")){
             return true;
         } else {
             return false;
