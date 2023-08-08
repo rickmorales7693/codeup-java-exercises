@@ -65,6 +65,36 @@ public class Movie {
         Movie newMovie = new Movie(name, category);
     }
 
+    public void deleteMovie(){
+        System.out.println("Enter the name of the movie you would like to delete: ");
+        String name = scanner.nextLine();
+        System.out.println("Enter the category of the movie you would like to delete: ");
+        String category = scanner.nextLine();
+        Movie newMovie = new Movie(name, category);
+    }
+
+    public void editMovie(){
+        System.out.println("Enter the name of the movie you would like to edit: ");
+        String name = scanner.nextLine();
+        System.out.println("Enter the category of the movie you would like to edit: ");
+        String category = scanner.nextLine();
+        Movie newMovie = new Movie(name, category);
+    }
+
+    public void searchMovie(){
+        System.out.println("Enter the name of the movie you would like to search for: ");
+        String name = scanner.nextLine();
+        System.out.println("Enter the category of the movie you would like to search for: ");
+        String category = scanner.nextLine();
+        Movie newMovie = new Movie(name, category);
+    }
+
+    public void exit(){
+        System.out.println("Goodbye!");
+    }
+
+
+
 
 
 
