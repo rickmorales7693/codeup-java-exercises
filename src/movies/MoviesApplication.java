@@ -25,7 +25,6 @@ public class MoviesApplication {
 
 
 
-
         switch (userChoice){
             case 0:
                 movie.exit();

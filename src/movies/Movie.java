@@ -19,10 +19,6 @@ public class Movie {
     private String category;
 
 
-    public static Movie[] getMovies() {
-        return movies;
-    }
-
     public static void setMovies(Movie[] movies) {
         Movie.movies = movies;
     }
@@ -92,10 +88,6 @@ public class Movie {
     public void exit(){
         System.out.println("Goodbye!");
     }
-
-
-
-
 
 
 
