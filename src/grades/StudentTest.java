@@ -14,6 +14,7 @@ public class StudentTest {
         Student student2 = new Student("Jane");
         student2.addGrade(95);
         student2.addGrade(78);
+        student2.addGrade(83);
         System.out.println(student2.getName() + "'s Grade Average: " + student2.getGradeAverage());
 
     }
