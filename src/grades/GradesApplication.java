@@ -34,7 +34,7 @@ public class GradesApplication {
             System.out.println("Enter your choice: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
