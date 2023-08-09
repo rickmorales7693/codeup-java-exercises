@@ -7,11 +7,13 @@ import java.util.Scanner;
 public class GradesApplication {
 
     public static void main(String[] args) {
-        HashMap<String, Student> students = getStringStudentHashMap();
 
-        for (String username : students.keySet()) {
-            System.out.println(username + " - " + students.get(username));
-        }
+        studentString();
+
+    }
+
+    private static void studentString(){
+        HashMap<String, Student> students = getStringStudentHashMap();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -37,10 +39,9 @@ public class GradesApplication {
             scanner.nextLine();
 
             switch (choice) {
-                case 1:
+                case 1 -> {
                     System.out.println("\nEnter a GitHub username:");
                     String input = scanner.nextLine();
-
                     if (students.containsKey(input)) {
                         Student student = students.get(input);
                         System.out.println("\nName: " + student.getName() + " - GitHub Username: " + input);
@@ -49,37 +50,29 @@ public class GradesApplication {
                     } else {
                         System.out.println("\nSorry, no student found with the GitHub username of \"" + input + "\".");
                     }
-                    break;
-
-                case 2:
+                }
+                case 2 -> {
                     for (String username : students.keySet()) {
                         Student student = students.get(username);
                         System.out.println("\nName: " + student.getName() + " - GitHub Username: " + username);
                         System.out.println("Grades: " + student.getGrades());
                         System.out.println("Average: " + student.getGradeAverage());
                     }
-                    break;
-
-                case 3:
+                }
+                case 3 -> {
                     double totalAverage = students.values().stream().mapToDouble(Student::getGradeAverage).average().orElse(0.0);
                     System.out.println("\nOverall class average: " + totalAverage);
-                    break;
-
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("\nCSV Report:");
                     System.out.println("Name, GitHub Username, Grades, Average");
                     for (String username : students.keySet()) {
                         Student student = students.get(username);
                         System.out.println(student.getName() + ", " + username + ", " + student.getGrades() + ", " + student.getGradeAverage());
                     }
-                    break;
-
-                case 5:
-                    continueLoop = false;
-                    break;
-
-                default:
-                    System.out.println("\nInvalid choice. Please try again.");
+                }
+                case 5 -> continueLoop = false;
+                default -> System.out.println("\nInvalid choice. Please try again.");
             }
         }
 
