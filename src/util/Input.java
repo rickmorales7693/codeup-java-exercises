@@ -38,10 +38,6 @@ public class Input {
             return this.getInt();
         }
     }
-    public int getInt(String prompt){
-        System.out.println(prompt);
-        return this.getInt();
-    }
 
     public int getInt(int min, int max){
         int userInt = this.getInt();
@@ -51,10 +47,6 @@ public class Input {
             System.out.printf("The number must be between %d and %d. Please try again.%n", min, max);
             return getInt(min, max);
         }
-    }
-    public int getInt(String prompt, int min, int max){
-        System.out.println(prompt);
-        return this.getInt(min, max);
     }
 
     public double getDouble(){
@@ -78,10 +70,6 @@ public class Input {
             System.out.printf("The number must be between %d and %d. Please try again.%n", min, max);
             return getDouble(min, max);
         }
-    }
-    public double getDouble(String prompt, double min, double max){
-        System.out.println(prompt);
-        return this.getDouble(min, max);
     }
 
 
